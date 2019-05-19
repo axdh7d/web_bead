@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="hu">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="styles.css">
+        <title>Összehasonlítás - AXDH7D</title>
+    </head>
+
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                  <div class="navbar-nav">
+                    <a class="nav-item nav-link" href="index.html">Főoldal</a>
+                    <a class="nav-item nav-link" href="session.html">Session</a>
+                    <a class="nav-item nav-link" href="token.html">Token</a>
+                    <a class="nav-item nav-link active" href="osszehasonlitas.html">Összehasonlítás<span class="sr-only">(current)</span></a>
+                  </div>
+                </div>
+            </nav>
+        </header>
+        <div class="container-fluid content">
+            <section>
+                <h2>Különbségek összefoglalása</h2>
+                <div class="row">
+                    <div class="col-md-6">
+                        <p>
+                            A legfőbb különbség az, hogy a hagyományosan használt <a target="_blank" href="https://www.webopedia.com/TERM/S/session_cookie.html">session cookie</a>-val szemben a token állapot nélküli, 
+                            lehetőséget ad decentralizált ellenőrzésre, nem terheli az adatbázist,a cookieval ellentétben különböző 
+                            domainek között is használható, valamint eszközfüggetlen(nincs szükség böngészőre vagy tipikusan 
+                            böngészőfunkcionalitás másképp történő implementálására). 
+                        </p>
+                        <p>
+                            Ezekből a különbségekből kifolyólag azonban nem nehéz számos biztonsági rést építeni az alkalmazásba, 
+                            így sok szakértő nem ajánlja a használatát, hagyományos session-alapú azonosítás pótlására pedig semmiképp.
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+                        <table>
+                            <caption>
+                                <summary>
+                                    Session és token tulajdonságai
+                                </summary>
+                                <details>
+                                    Néhány jellemző rövid összehasonlítása
+                                </details>
+                            </caption>
+                            <tr>
+                                <th></th>
+                                <th>Session</th>
+                                <th>Token</th>
+                            </tr>
+                            <tr>
+                                <td>Állapot nélküliség</td>
+                                <td></td>
+                                <td>X</td>
+                            </tr>
+                            <tr>
+                                <td>Platformfüggetlenség</td>
+                                <td></td>
+                                <td>X</td>
+                            </tr>
+                            <tr>
+                                <td>Könnyebb implementáció</td>
+                                <td>X</td>
+                                <td></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <h2>Videó</h2>
+                <div class="row">
+                    <div class="col-md-12 video-wrapper">
+                        <video controls poster="static/video_poster.PNG">
+                                <source src="static/JWT_vs_Cookies_for_Authentication.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <footer class="container-fluid footer">
+            <span>Bácsi Tibor</span>
+            <span>AXDH7D</span>
+        </footer>
+    </body>
+
+</html>
